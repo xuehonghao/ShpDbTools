@@ -1,5 +1,5 @@
-# ShpDb
-基于geotools的shp和db互导工具
+# ShpDbTools
+基于geotools的矢量文件数据和数据库数据相互导出的工具
 
 java编写，c/s架构
 
