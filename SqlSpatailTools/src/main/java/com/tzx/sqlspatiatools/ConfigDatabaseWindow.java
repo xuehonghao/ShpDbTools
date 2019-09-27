@@ -422,12 +422,12 @@ public class ConfigDatabaseWindow extends JFrame {
 	 * @return
 	 */
 	public boolean verification() {
-		if(!textField.getText().trim().equals("")) {
-			if(!textField.getText().contains("&") && rdbtnNewRadioButton_2.getText().equals("Oracle")) {
-				JOptionPane.showMessageDialog(this, "Oracle数据库需要在数据库地址后拼接&符号和服务名");
-				return false;
-			}
-		}
+//		if(!textField.getText().trim().equals("")) {
+//			if(!textField.getText().contains("&") && rdbtnNewRadioButton_2.getText().equals("Oracle")) {
+//				JOptionPane.showMessageDialog(this, "Oracle数据库需要在数据库地址后拼接&符号和服务名");
+//				return false;
+//			}
+//		}
 		
 		if (textField.getText().trim().equals("")) {
 			JOptionPane.showMessageDialog(this, "请输入数据库地址");

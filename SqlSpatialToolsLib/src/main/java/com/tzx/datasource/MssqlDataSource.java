@@ -53,7 +53,7 @@ public class MssqlDataSource extends DbDataSource {
 			Connection connection = dbu.getConnection();
 			Statement stmt = connection.createStatement();
 			ResultSet rs = stmt.executeQuery(
-					"SELECT name FROM  master..sysdatabases WHERE name NOT IN ( 'master', 'model', 'msdb', 'tempdb', 'northwind','pubs' )");
+					"SELECT name FROM  master..sysdatabases WHERE name NOT IN ( 'master', 'model', 'msdb', 'tempdb', 'northwind','pubs','Evaluation' )");
 			while (rs.next()) {
 				list.add(rs.getString("name"));
 			}

@@ -57,7 +57,7 @@ public class AboutSoftware extends JFrame {
 			public void paintComponent(Graphics g) {
 				super.paintComponent(g);
 				//下面这行是为了背景图片可以跟随窗口自行调整大小，可以自己设置成固定大小
-				URL u = getClass().getResource("tzx.png");
+				URL u = getClass().getClassLoader().getResource("tzx.png");
 				icon=new ImageIcon(u);
 				img=icon.getImage();
 				g.drawImage(img, 0, 0,this.getWidth(), this.getHeight(), this);

@@ -305,10 +305,12 @@ public class ShpDataSource extends DataSourceBase {
 			}
 			while (it.hasNext()) {
 				Map.Entry<String, Object> entry = it.next();
-				/*
-				 * if (entry.getKey().equals(configArgs.getFieldName())) { // it.remove();//
-				 * 使用迭代器的remove()方法删除元素 continue; }
-				 */
+				
+				  if (entry.getKey().equals("the_geom") ){ 
+					   it.remove();//使用迭代器的remove()方法删除元素 
+					   continue; 
+				  }
+				 
 				schemaBuilder.add(entry.getKey(), (Class<?>) entry.getValue());
 			}
 
@@ -357,8 +359,8 @@ public class ShpDataSource extends DataSourceBase {
 					String[] fieldNames = inputDataSrcArgs.getFieldName().split(",");
 					
 					feature1.setDefaultGeometry(new GeometryFactory()
-							.createPoint(new Coordinate(Double.valueOf((String) feature.getAttribute(fieldNames[0])),
-									Double.valueOf((String)feature.getAttribute(fieldNames[1])))));
+							.createPoint(new Coordinate(Double.valueOf(String.valueOf(feature.getAttribute(fieldNames[0])) ),
+									Double.valueOf(String.valueOf(feature.getAttribute(fieldNames[1]))))));
 //					feature1.setAttribute("the_geom", new GeometryFactory().createPoint(new Coordinate((Double)feature.getAttribute(fieldNames[0]), (Double)feature.getAttribute(fieldNames[1]))));
 					break;
 

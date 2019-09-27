@@ -1,5 +1,12 @@
 [
    {
+      "dbType":"MSSQL",
+      "dbHost":"127.0.0.1",
+      "dbPort":"1433",
+      "dbUser":"sa",
+      "dbPassword":"123"
+   },
+   {
       "dbType":"Oracle",
       "dbHost":"192.168.0.70\u0026dyslpc",
       "dbPort":"1521",
@@ -9,23 +16,23 @@
    {
       "dbType":"Oracle",
       "dbHost":"192.168.0.70,
-            dyslpc",
-      "dbPort":"1521",
-      "dbUser":"fda",
-      "dbPassword":"fda"
-   },
-   {
-      "dbType":"Oracle",
-      "dbHost":"192.168.0.70,
-                  dyslpc",
-      "dbPort":"1521",
-      "dbUser":"fda",
-      "dbPassword":"fda"
-   },
-   {
-      "dbType":"Oracle",
-      "dbHost":"192.168.0.70,
                         dyslpc",
+      "dbPort":"1521",
+      "dbUser":"fda",
+      "dbPassword":"fda"
+   },
+   {
+      "dbType":"Oracle",
+      "dbHost":"192.168.0.70,
+                              dyslpc",
+      "dbPort":"1521",
+      "dbUser":"fda",
+      "dbPassword":"fda"
+   },
+   {
+      "dbType":"Oracle",
+      "dbHost":"192.168.0.70,
+                                    dyslpc",
       "dbPort":"1521",
       "dbUser":"fda",
       "dbPassword":"fda"
@@ -71,13 +78,6 @@
       "dbPort":"3306",
       "dbUser":"root",
       "dbPassword":"root"
-   },
-   {
-      "dbType":"MSSQL",
-      "dbHost":"127.0.0.1",
-      "dbPort":"1433",
-      "dbUser":"sa",
-      "dbPassword":"123"
    }
 
 ]
